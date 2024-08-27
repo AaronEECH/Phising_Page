@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear una cuenta nueva en Facebook</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="right-section">
+            <h1>Regístrate</h1>
+            <form id="signup-form">
+                <input type="text" id="first-name" placeholder="Nombre" required>
+                <input type="text" id="last-name" placeholder="Apellido" required>
+                <input type="text" id="signup-email" placeholder="Correo electrónico" required>
+                <input type="password" id="signup-password" placeholder="Contraseña" required>
+                <div class="gender-selection">
+                    <label><input type="radio" name="gender" value="female" required> Mujer</label>
+                    <label><input type="radio" name="gender" value="male"> Hombre</label>
+                    <label><input type="radio" name="gender" value="other"> Otro</label>
+                </div>
+                <input type="submit" value="Registrarte">
+                <button type="button" class="cancel-button" onclick="parent.cerrarModal()">Cancelar</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-links">
+                <a href="#">Política de privacidad</a> ·
+                <a href="#">Centro de privacidad</a> ·
+                <a href="#">Grupos</a> ·
+                <a href="#">Ayuda</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/scripts.js"></script>
+</body>
+</html>
